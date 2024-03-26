@@ -1,0 +1,10 @@
+CREATE TABLE simple_db (
+  id INTEGER PRIMARY KEY, 
+  name TEXT,
+  age INTEGER
+);
+
+INSERT INTO simple_db (id, name, age)
+VALUES 
+  (1, 'John', 30),
+  (2, 'Jane', 25);
