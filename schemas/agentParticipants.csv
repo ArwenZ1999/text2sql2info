@@ -1,0 +1,17 @@
+Field Name,Data Type,Source System,Source Value,Description,Curation
+agentFullName,String,LivePerson,agentParticipants.agentFullName,Full name of the agent assigned to the converstaion,None
+agentNickname,String,LivePerson,agentParticipants.agentNickname,Nickname of the agent assigned to the converstaion,None
+agentLoginName,String,LivePerson,agentParticipants.agentLoginName,Login name of the agent assgined to the conversation,None
+agentDeleted,Boolean,LivePerson,agentParticipants.agentDeleted,Indicates whether agent was deleted,None
+agentld,String,LivePerson,agentParticipants.agentld,ID of agent,None
+agentPid,String,LivePerson,agentParticipants.agentPid,,None
+userType,String,LivePerson,agentParticipants.userType,"The id of the user type, can be one of the following: 0, 1, 2",None
+userTypeName,String,LivePerson,agentParticipants.userTypeName,"The name of the user type can be one of the following: System, Human or Bot",None
+role,String,LivePerson,agentParticipants.role,"The agent's role in the conversation - assigned agent, manager etc",None
+agentGroupName,String,LivePerson,agentParticipants.agentGroupName,The agent's group name,None
+agentGroupld,Long,LivePerson,agentParticipants.agentGroupld,Agent's group ID,None
+time,String,LivePerson,agentParticipants.time,The time the agent was added to the conversation,"BigQuery datetime format is
+YYYY-MM-DD
+HH:mm:SS.FFFFFF"
+permission,String,LivePerson,agentParticipants.permission,"Agent's permission in the conversation(READER, ASSIGNED,SUGGESTED_ASSIGNED_AGENT)",None
+dialogid,String,LivePerson,agentParticipants.dialogid,The ID of the dialog the agent is participating in,None

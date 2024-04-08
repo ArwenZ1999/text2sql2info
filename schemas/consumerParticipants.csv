@@ -1,0 +1,5 @@
+Firld Name,Data Type,Source System,Source Value,Description,Curation
+participantId,String,LivePerson,consumerParticipants.participantId,ID of customer (in the LivePerson database),None
+time,String,LivePerson,consumerParticipants.time,Time in which the data was last updated,BigQuery datetime format is YYYY-MM-DD HH:mm:SS.FFFFFF
+joinTime,String,LivePerson,consumerParticipants.joinTime,Time the consumer joined the conversation,None
+dialogId,String,LIvePerson,consumerParticipants.dialogId,The ID of the dialog the consumer is participating in,None

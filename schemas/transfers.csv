@@ -1,0 +1,14 @@
+Field Name,Data Type,Source System,Source Value,Description,Curation
+time,STRING,LivePerson,transfers.time,Time of transfer,BigQuery datetime format is yyyy-mm-dd hh:mm:ss:fffff
+assignedAgentId,STRING,LivePerson,transfers.assignedAgentld,Target agent ID (to transfer to),None
+targetSkillId,Long,LivePerson,transfers.targetSkillid,Target skill ID (to transfer to),None
+targetSkillName,STRING,LivePerson,transfers.targetSkillName,Target skill name,None
+reason,STRING,LivePerson,transfers.reason,"Reason for transfer (back2Q, Agent, SuggestedAgentTimeout, Skill, TakeOver)",None
+by,LONG,LivePerson,transters.by,ID of the agent who transferred the conversation,None
+sourceSkillId,STRING,LivePerson,transfers.sourceSkillid,The source skill ID,None
+sourceSkillName,STRING,LivePerson,transfers.sourceSkillName,The source skill name,None
+sourceAgentId,STRING,LivePerson,transfer.sourceAgentId,The source agent ID,None
+sourceAgentFullName,STRING,LivePerson,transfers.sourceAgentFullName,The source agent full name,None
+sourceAgentLoginName,STRING,LivePerson,transfers.sourceAgentLoginName,The source agent name,None
+sourceAgentNickname,LONG,LivePerson,transfers.sourceAgentld,The source agent ID,None
+dialogId,STRING,LivePerson,transfers.dialogId,The ID of the dialog being transfered,None

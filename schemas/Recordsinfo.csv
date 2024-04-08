@@ -1,0 +1,45 @@
+Field Name,Data Type,Source System,Source Value,Description,Curation
+conversationId,STRING,LivePerson,info.conversationId,ID which uniquely identifies the conversation,None
+customerId,STRING,LivePerson,sdes.events.customerinfo.customerid,"The ID of the customer, maps to EXT_PTY_ID_TX in OCIS (to confirm)",Moved from the 'sdes' object
+startTime,STRING,LivePerson,info.startTime,Start time of the conversation,BigQuery datetime format is YYYY-MM-DD HH:mm:SS.FFFFFF
+endTime,STRING,LivePerson,info.endTime,End time of the conversation,BigQuery datetime format is YYYY-MM-DD HH:mm:SS.FFFFFF
+duration,LONG,LivePerson,info.duration,Time (in seconds) from when the customer started the conversation until it ended,None
+firstName,STRING,LivePerson,sdes.events.personalinfo.name,Personal name of the customer,"Change field name from 'name' to 'firstName', Moved from the 'sdes' object"
+surname,STRING,LivePerson,sdes.events.personalinfo.surname,Surname of the customer,"Moved from the 'sdes' object, PII treatment"
+brand,STRING,LivePerson,sdes.events.customerinfo.companyBranch,"The brand of the customer, e.g. Halifax, Lloyds, Bos, MBNA","Change field name from 'companyBranch' to 'brand', Moved from the 'sdes' object, PII treatment"
+latestAgentId,STRING,LivePerson,info.latestAgentId,ID of the most recent agent the conversation was assigned to,None
+latestAgentNickname,STRING,LivePerson,info.latestAgentNickname,The most recent agent's nickname,None
+latestAgentFullName,STRING,LivePerson,info.latestAgentFullName,The most recent agent's full name,None
+latestAgentLoginName,STRING,LivePerson,info.latestAgentLoginName,The most recent agent's login name,None
+agentDeleted,STRING,LivePerson,info.agentDeleted,Indicates whether the agent was deleted,None
+latestSkillId,STRING,LivePerson,info.latestSkillId,Most recent skill ID of the conversation,None
+latestSkillName,STRING,LivePerson,info.latestSkillName,Most recent skill name that the conversation was assigned to,None
+source,STRING,LivePerson,info.source,Source origin (eg. App) from which the conversation was initially opened,None
+closeReason,STRING,LivePerson,info.closeReason,Reason for closing the conversation - by agent / customer,None
+closeReasonDescription,STRING,LivePerson,info.closeReasonDescription,Additional information regarding the conversation close reason,None
+mcs,STRING,LivePerson,info.mcs,Meaningful Conversation Score of the conversation up to this message,None
+alertedMCS,STRING,LivePerson,info.alertedMCS,"Divides the MCS score into 3 groups: Positive, Neutral, Negative",None
+status,STRING,LivePerson,info.status,Latest status of the conversation,None
+fullDialog Status,STRING,LivePerson,info.fullDialog Status ,,None
+firstConversation,STRING,LivePerson,info.firstConversation,Whether it is the customer's first conversation,None
+device,STRING,LivePerson,info.device,Type of device from which the conversation was initially opened,None
+browser,STRING,LivePerson,info.browser,The browser or hosted application of the engagement,None
+browserVersion,STRING,LivePerson,info.browser Version,Detailed version info of the user agent (browser or host-application),None
+operatingSystem,STRING,LivePerson,info.operatingSystem,Operating system of the device,None
+operating System Version,STRING,LivePerson,info.operatingSystemVersion,"The operating system version, and distribution type (if relevant)",None
+latestAgentGroupld,Long,LivePerson,info.latestAgentGroupld,Group ID of the agent most recently assigned to the conversation,None
+latestAgentGroupName,STRING,LivePerson,info.latestAgentGroupName,Group name of the agent most recently assigned to the conversation,None
+latestQueueState,STRING,LivePerson,info.latestQueueState,Indicates if the conversation is assigned to an agent or waiting in queue,None
+isPartial,Boolean,LivePerson,info.isPartial,Indicates whether the conversation's data is partial,None
+sessionid,STRING,LivePerson,info.sessionld,Session ID in LivePerson system,None
+interactionContextid,STRING,LivePerson,info.interactionContextid,,None
+timeZone,STRING,LivePerson,info.timeZone,The customer's time zone,"Value is a long string with a lot of redundacy, parse the relevant information information out of this value"
+features,List,LivePerson,info.features,The features that the connection is using,None
+language,STRING,LivePerson,info.language,Language of the conversation's context,None
+integration,STRING,LivePerson,info integration,"The integration type: mobile-sk, web-sdk, brand-sdk",None
+integrationVersion,STRING,LivePerson,info.integrationVersion,The version of the integration,None
+appld,STRING,LivePerson,info.appld,The name of the application,None
+ipAddress,STRING,LivePerson,info.ipAddress,Current connection customer IP address,PII treatment
+visitorld,STRING,LivePerson,info.visitorld,LivePerson ID of the visitor,None
+latestHandlerAccountla,STRING,LivePerson,info.latestHandlerAccountld,Account ID of the latest handler,None
+latestHandlerSkillld,Long,LivePerson,info.latestHandlerSkillid,Skill ID of the latest handler,None

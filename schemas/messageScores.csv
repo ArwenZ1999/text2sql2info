@@ -1,0 +1,5 @@
+Field Name,Data Type,Source System,Source Value,Description,Curation
+messageId,String,LivePerson,messageScores.messageId,ID of message,None
+messageRawScore,Integer,LivePerson,messageScores.messageRawScore,Score of message,None
+mcs,Integer,LivePerson,messageScores.mcs,Meaningful Conversation Score of the conversation up to this message,None
+time,String,LivePerson,messageScores.time,Time the MCS was calculated,BigQuery datetime format is YYYY-MM-DD HH:mm:SS.FFFFFF

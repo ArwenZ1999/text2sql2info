@@ -1,0 +1,8 @@
+Field Name,Data Type,Source System,Source Value,Description,Curation
+messageId,String,LivePerson,messageStatuses.messageId,ID of message,None
+seq,Integer,LivePerson,messageStatuses.seq,Message's sequence in the conversation,None
+dialogId,String,LivePerson,messageStatuses.dialogId,The ID of the message dialog,None
+time,String,LivePerson,messageStatuses.time,Time the change in message status occurred ,BigQuery datetime format is YYYY-MM-DD HH:mm:SS.FFFFFF
+participantId,String,LivePerson,messageStatuses.participantId,The ID of the participant sending the message,None
+participantType,String,LivePerson,messageStatuses.participantType,The type of participant,None
+messageDeliveryStatus,String,LivePerson,messageStatuses.messageDeliveryStatus,"The message's delivery status (i.e. sent. accept, read)",None

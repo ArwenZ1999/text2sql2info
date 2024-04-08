@@ -1,0 +1,8 @@
+Field Name,Data Type,Source System,Source Value,Description,Curation
+assignedAgentId,String,LivePerson,interactions.assignedAgentId,ID of the agent participating in the current interaction,None
+assignedAgentFullName,String,LivePerson,interactions.assignedAgentFullName,The agent's full name,None
+assignedAgentLoginName,String,LivePerson,interactions.assignedAgentLoginName,The agent's login name,None
+assignedAgentNickname,String,LivePerson,interactions.assignedAgentNickname,The agent's nickname,None
+interactionTime,String,LivePerson,interactions.interactionTime,Interaction start time,BigQuery datetime format is YYYY-MM-DD HH:mm:SS.FFFFFF
+interactiveSequence,String,LivePerson,interactions.interactiveSequence,Interaction's sequence within the conversation,None
+dialogId,String,LivePerson,interactions.dialogId,The ID of the dialog having the conversation,None

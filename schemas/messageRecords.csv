@@ -1,0 +1,14 @@
+Field Name,Data Type,Source System,Source Value,Description,Curation
+type,String,LivePerson,messageRecords.type,type of data,None
+text,String,LivePerson,messageRecords.messageData.msg.text,Content of the message,PIl treatment
+messageld,String,LivePerson,messageRecords.messageld,ID of message,None
+audience,String,LivePerson,messageRecords.audience,Who can receive the message (eg private message),None
+seq,Integer,LivePerson,messageRecords.seq,Message's sequence in the conversation,None
+dialogld,String,LivePerson,messageRecords.dialogld,"Dialog ID. A conversation may contain multiple dialogs (main dialog, survey dialog, etc.), each dialog identified by its unique ID",None
+participantld,Integer,LivePerson,messageRecords.participantld,ID of participant,None
+source,String,LivePerson,messageRecords.source,Message's origin,None
+time,String,LivePerson,messageRecords.time,Time the message was sent,BigQuery datetime format is YYYY-MM-DO HHammSS.FFFFFF
+integrationSource,String,LivePerson,messageRecords.integrationSource,Conversation message's origin,None
+device,String,LivePerson,messageRecords.device,Device the message was sent from,None
+sentBy,String,LivePerson,messageRecords.sentBy,Indicates whether the message was sent by agent or consumer,None
+classifications,List of Dicts,LivePerson,turns.question.classifications,Classifications of intent of the message,Enrichment from VA data

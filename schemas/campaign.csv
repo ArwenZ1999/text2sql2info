@@ -1,0 +1,16 @@
+Field Name,Data Type,Source System,Source Value,Description,Curation
+campaignEngagementId,String,LivePerson,campaign,ID of the campaign's engagement,None
+campaignEngagementName,String,LivePerson,campaign,Name of the campaign's engagement,None
+goalId,String,LivePerson,campaign,ID of the campaign's goal,None
+goalName,String,LivePerson,campaign,Name of the gampaign's goal,None
+engagementSource,String,LivePerson,campaign,"The source of the campaign's engagement e.g. WEB_SITE, SOCIAL_MEDIA, etc",None
+visitorBehaviorId,String,LivePerson,visitorBehavior,ID of the behavioural targeting rule defined for the campaign's engagement (in case engagement id is available),None
+visitorBehaviorName,String,LivePerson,visitorBehavior,Name of the behavioural targeting rule defined for the campaign's engagement (in case engagement id is available),None
+visitorProfileId,String,LivePerson,visitorProfile,ID of the visitor profile defined for the campaign,None
+visitorProfileName,String,LivePerson,visitorProfile,Name of the visitor profile defined for the campaign,None
+lobId,Long,LivePerson,lob,ID of the line of business of the campaign,None
+lobName,String,LivePerson,lob,Name of the line of business of the campaign,None
+locationId,String,LivePerson,location,ID of the location of the engagement on the screen,None
+locationName,String,LivePerson,location,Describes the engagement display location,None
+behaviorSystemDefault,Boolean,LivePerson,behaviorSystem,Indicates whether behavioral targeting rule is the default one,None
+profileSystemDefault,Boolean,LivePerson,profileSystemDefault,Indicates whether behavioral targeting rule is the default one,None
