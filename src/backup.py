@@ -364,3 +364,37 @@ placeholders = ",".join(["?"] * len(sample_data_campaign_engagement[0]))
 sql = f"INSERT INTO campaign_engagement_data VALUES ({placeholders})"
 c.executemany(sql, sample_data_campaign_engagement)
 conn.commit()
+
+import random
+from faker import Faker
+import sqlite3
+
+# Connect to the database
+conn = sqlite3.connect('ConversationHistoryRecords.db')
+c = conn.cursor()
+
+# Generate mock data for users table
+fake = Faker()
+for i in range(50):
+    name = fake.name()
+    email = fake.email()
+    c.execute("INSERT INTO users VALUES (NULL, ?, ?)", (name, email))
+
+# Generate mock data for conversations table 
+for i in range(50):
+    user1_id = random.randint(1, 50)
+    user2_id = random.randint(1, 50)
+    while user1_id == user2_id:
+        user2_id = random.randint(1, 50)
+    topic = fake.sentence(nb_words=6)
+    c.execute("INSERT INTO conversations VALUES (NULL, ?, ?, ?)", (user1_id, user2_id, topic))
+
+# Generate mock data for messages table
+for i in range(50):
+    conversation_id = random.randint(1, 50)
+    user_id = random.randint(1, 50)
+    message = fake.paragraph(nb_sentences=3)
+    c.execute("INSERT INTO messages VALUES (NULL, ?, ?, ?)", (conversation_id, user_id, message))
+
+conn.commit()
+conn.close()
