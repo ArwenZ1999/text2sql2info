@@ -4,6 +4,15 @@ import json
 from datetime import datetime
 from faker import Faker
 
+"""
+Extracts dialogues from the specified file path.
+
+Args:
+    filepath (str): The file path to extract dialogues from.
+
+Returns:
+    list: A list of dialogues extracted from the file.
+"""
 def extract_dialogues(filepath):
     dialogues = []
     with open(filepath, 'r') as f:
@@ -18,7 +27,15 @@ def extract_dialogues(filepath):
         utterances.extend(dialogue.split('\n'))   
     return utterances         
 
-mock_dialogs=extract_dialogues('dialogsum/DialogSum_Data/dialogsum.dev.jsonl')
+mock_dialogs=extract_dialogues('DialogSum_Data/dialogsum.dev.jsonl')
+"""
+Generates a list of mock data for agent participants, including fields such as full name, nickname, login name, deleted status, agent ID, participant ID, user type, role, group name and ID, timestamp, permission, and dialog ID.
+
+The function uses the Faker library to generate realistic-looking data, and creates 50 mock data entries.
+
+Returns:
+    list: A list of tuples containing the mock data for each agent participant.
+"""
 def generate_mock_data_agentParticipants():
     fake = Faker()
     mock_data = []
